@@ -19,8 +19,13 @@ namespace DirectoryStatistic
                 using (Process myProcess = new Process ())
                 {
 
-                    string path = @"C:\Users\admin\Desktop";
-                    string pattern = "*.pdf";
+                    //string path = @"C:\Users\admin\Desktop";
+                    //string pattern = "*.pdf";
+                    Console.Write("The directory path: ");
+                    string path = Console.ReadLine();
+                    Console.Write("The file pattern: ");
+                    string pattern = Console.ReadLine();
+
                     string fileName = path + pattern;
                     
                     myProcess.StartInfo.CreateNoWindow = true;
